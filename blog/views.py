@@ -1,5 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
-def blog():
-    pass
+def index(request):
+    return HttpResponse('This is the index page', content_type='text/plain')
